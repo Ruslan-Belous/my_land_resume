@@ -1,0 +1,117 @@
+@import "../bourbon/bourbon"
+
+$color: #8238A7 //Theme skin
+$text_color: #888
+$main_color: #222
+$bg_light: #FAFAFA
+
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $main_color
+	+kerning(1)
+
+a
+	color: #8238A7
+
+p,
+body .main_footer
+	color: $text_color
+
+.color_element
+	color: $color
+.color_bg
+	background-color: $color
+.color_border
+	border-color: $color
+.main_color_bg
+	background-color: $main_color
+.bg_light
+	background-color: #f5f5f5
+.bg_dark
+	background-color: $main_color
+	color: #fff
+	.s_descr::after
+		background-color: #fff
+	a
+		color: #fff
+
+.top_mnu 
+	a:hover
+		color: $color
+		background-color: rgba(255,255,255,.075)
+	a
+		+kerning(4)
+.top_name
+	p
+		color: $bg_light
+
+#back-top span i:hover
+	color: #826171
+
+.resume_container
+	h3
+		color: $main_color
+
+.s_about
+	p
+		&:nth-child(even)
+			color: $color
+
+.social_wrap
+	li
+		a:hover
+			color: #39afff
+			transition: all 0.25s ease
+.resume_item
+	.year
+		background: $color
+.s_portfolio
+	li
+		color: $text_color
+		&:hover
+			color: #fff	
+	li.active
+		color: #fff
+		border-bottom: 2px solid $color
+		padding-bottom: 3px
+
+.s_content .port_item_cont
+	a
+		border-color: $color
+		color: $color
+
+.copy_name
+	display: inline-block
+	font-size: 18px
+.main_footer a, .contact_icon
+	color: $color
+
+.main_footer .social_wrap a:hover
+	color: #fff
+
+.text-danger
+	color: $color
+
+form
+	input:focus,
+	textarea:focus
+		border: 1px solid $color
+		box-shadow: 0 0 2px #826171
+		transition: all 0.65s ease
+	button
+		background-color: $color
+	.form-group
+		color: $text_color
+		+kerning(3)
+
+.contact_box 
+	.contact_icon 
+		color: #2478d6
+		a
+			color: #8238a7
+
+.error	
+	color: #c50000

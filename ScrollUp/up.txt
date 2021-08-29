@@ -1,0 +1,8 @@
+<!-- //MrScrollUp -->
+<link rel="stylesheet" type="text/css" href="/MrScrollUp/style/raketa.css">
+<script type="text/javascript" src="/MrScrollUp/js/MrScrollUp_raketa.js"></script>
+<!-- //MrScrollUp -->
+
+<div id="MrScrollUp" style="display: block; right: 49.5px;">
+<div class="MrScrollUp1" style="opacity: 0; display: block; background-position: -62px 0px;"></div>
+<div class="MrScrollUp2"></div></div>
